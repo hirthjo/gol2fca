@@ -1,4 +1,5 @@
 * Game of Life to FCA
+Fun with [[https://en.wikipedia.org/wiki/Conway's_Game_of_Life][Game of Life]] and [[https://upriss.github.io/fca/fca.html][Formal Concept Analysis]].
 ** install
 [[https://leiningen.org/][Leiningen]] needs to be installed and the [[http://www.math.tu-dresden.de/~ganter/fca/][latex styles]] ~fca.sty~ and
 ~newdrawline.sty~ need to be placed in the ~latex~ folder.
