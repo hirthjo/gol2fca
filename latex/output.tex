@@ -1,0 +1,16 @@
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{fca}
+%\newcommand{\lattices}{10}
+\begin{document}
+\foreach \step in {0,1,...,\lattices}
+{%
+  \begin{tikzpicture}
+    \node[align=center] (context) {
+      \resizebox{3cm}{!}{%
+        \bf \input{../output/context\step.tex}}};
+    \node[right of = context, node distance = 3cm] {\resizebox{3cm}{3cm}{\input{../output/lattice_\step.tikz}}};
+  \end{tikzpicture}
+}
+\end{document}

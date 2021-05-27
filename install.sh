@@ -1,0 +1,3 @@
+mkdir output
+lein uberjar
+

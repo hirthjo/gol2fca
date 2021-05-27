@@ -1,0 +1,24 @@
+* Game of Life to FCA
+** install
+[[https://leiningen.org/][Leiningen]] needs to be installed and the [[http://www.math.tu-dresden.de/~ganter/fca/][latex styles]] ~fca.sty~ and
+~newdrawline.sty~ need to be placed in the ~latex~ folder.
+#+BEGIN_SRC bash
+./install.sh
+#+END_SRC
+** execute
+The program can be executed as follows
+#+BEGIN_SRC bash
+./togif.sh /path/to/file iterations
+#+END_SRC
+where ~file~ is a 0,1 table in csv format. Examples can be found in ~data~
+** Example Results
+#+BEGIN_SRC bash
+./togif.sh data/glider.csv 31
+#+END_SRC
+[[file:gif/glider.gif]]
+
+#+BEGIN_SRC bash
+./togif.sh data/pulsar.csv 2
+#+END_SRC
+
+[[file:gif/pulsar.gif]]
